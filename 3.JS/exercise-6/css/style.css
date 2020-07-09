@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+.slider{
+  width: 650px;
+  margin: 0 auto;
+}
+.slide{
+  text-align: center;
+  position: relative;
+}
+.number-text{
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  color: #0B2161;
+}
+.dots{
+  text-align: center;
+}
+.dot{
+  cursor: pointer;
+  font-size: 4em;
+  color: #2E64FE;
+}
+.active{
+  color: #0B2161;
+}

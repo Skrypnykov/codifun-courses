@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+.container{
+    width: 600px;
+    margin:0 auto;
+    text-align: center;
+}
+.input,.rez {
+  background-color:#87CEFA;
+  padding: 10px;
+}
+.input_el{
+  font-size: 1.1em;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px ;
+  border-color: #87CEFA;
+  text-align: center;
+}
+.input_el:last-child{
+  margin-right: 0px;
+}
+.btn_frm{
+  margin: 30px 0px 20px;
+  padding: 7px 100px;
+  font-size: 1.1em;
+  border-radius: 20px;
+  border: none;
+  color: #4169E1;
+  background-color:#B0E0E6;
+  cursor: pointer;
+}
+.btn_frm:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

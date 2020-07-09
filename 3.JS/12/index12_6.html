@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миссия 12/33  script 6</title>
+</head>
+<body>
+    <h1 id="rez"></h1>		
+        <script>		
+            var x = 3, message = "";		
+                switch(x*x+x-5) {		
+                case "7": message = "correct"; break;	
+                case "8": message = "incorrect"; break;		
+                default:  message = "unexpected solution";
+            }		
+            document.getElementById("rez").innerHTML = "Result of the evaluation - " + (x*x+x-5) + " - "+ message;		
+        </script>
+</body>
+</html>

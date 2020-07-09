@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Exercise #2</title>
+    <script>
+        var count=0,mesage="";
+    </script>
+</head>
+<body>
+    <img class="image" src="img/sony.jpg" alt="наушники Sony" onclick="count++;
+    if(count==1)
+        {mesage=`Этого недостаточно... Вы нажали только один раз`}
+    else if(count>=2&&count<=10)
+        {mesage=`Вы нажали `+count+` раз... Можно больше!`}
+    else
+        {mesage=`Браво! Вы были настойчивы, чтобы нажать `+count+` раз.`}
+    document.getElementById(`rez`).innerHTML=mesage;">
+    <p class="sign">Нажмите на изображение...</p>
+    <p id="rez"></p>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миссия 11/33  script 5</title>
+</head>
+<body>
+    <p id="rez"></p>
+    <script>
+        var salary = 7000, due = salary/10, bonus = 500, message = "";		
+        if (due<=700) {		
+               salary = salary + bonus - due;		
+        } else {	
+            salary = salary + bonus - due + 70;		
+        }		
+        document.getElementById("rez").innerHTML = "The salary of employee is " + salary;
+    </script>
+</body>
+</html>

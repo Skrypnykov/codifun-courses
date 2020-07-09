@@ -1,0 +1,1 @@
+document.getElementsByTagName("p")[0].style.border="2px pink solid";

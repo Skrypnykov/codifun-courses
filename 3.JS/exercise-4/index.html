@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Exercise #4</title>
+ </head>
+<body>
+    <div class="container">
+        <div class="block">
+            <h1>Ваш список покупок</h1>
+            <div class="total">Необходимые общин расходы: <span id="total"></span></div>
+            <div id="table"></div>
+        </div>
+        <div id="form" class="frm">
+            <div class="frm_content">
+                <div class="input_form">
+                    <input type="text" id="product" class="input_el" placeholder="Название товара"/>
+                    <input type="text" id="nmbr" class="input_el" placeholder="Количество товара"/>
+                    <input type="text" id="price" class="input_el" placeholder="Цена за единицу"/>
+                </div>
+                <button onclick="addItem();" class="btn_frm">Добавить товар в список</button>
+                <p id="err"></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миссия 12/33  script 4</title>
+</head>
+<body>
+    <h1 id="day"></h1>
+    <script>
+        var data = new Date();
+        var day = data.getDay();
+        switch(day){
+            case 0:day="воскресенье"; break;
+            case 1:day="понедельник"; break;
+            case 2:day="вторник"; break;
+            case 3:day="среда"; break;
+            case 4:day="четверг"; break;
+            case 5:day="пятница"; break;
+            case 6:day="суббота"; break;
+        }
+        document.getElementById("day").innerHTML = "Сегодня " + day; 
+    </script>
+</body>
+</html>
