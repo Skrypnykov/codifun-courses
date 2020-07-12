@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Codifun Form</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+		h1{	color: #302d41;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Форма с личными данными</h1>
+	<div align="center">
+		<canvas id="myCanvas" width="300px" height="80px" style="border:2px solid #a7a3a3;">Ваш веб-браузер не поддерживает элемент Canvas, который появился в версии HTML 5.</canvas>
+	</div>
+	<h4 style="display:inline">Нажмите здесь, чтобы вернуться</h4>
+	<a href="../index.html">
+		<svg width="50" height="50">
+			<circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="yellow"/>
+		</svg>
+	</a>
+	<form action="../example.php" method="post">
+		<p>Имя:<br>
+			<input type="text" name="fname"></p>
+		<p>Фамилия:<br>
+			<input type="text" name="sname"></p>
+		<p>Дата рождения: <input type="date" name="dob"></p>
+		<p>Страна происхождения:
+			<select name="country">
+  				<option value="Ukraine">Украина</option>
+  				<option value="Moldova">Республика Молдова</option>
+  				<option value="Romania">Румыния</option>
+			</select>
+		</p>
+		<p>Интересы:<br>
+			<input type="checkbox" name="skills1" checked>HTML<br>
+			<input type="checkbox" name="skills2">Javascript<br>
+			<input type="checkbox" name="skills3" checked>PHP<br>
+			<input type="checkbox" name="skills4" checked>CSS<br>
+		</p>
+		<br>
+		<p>E-mail:<input type="text" name="email"></p>
+		<p>Password:<input type="password" name="pass"></p>
+		<p>Как часто хотите получать уведомления на электронную почту?<br>
+			<input type="radio" name="interest">Еженедельно<br>
+			<input type="radio" name="interest">Ежемесячно<br>
+			<input type="radio" name="interest">Никогда<br>
+		</p>
+		<br>
+		<p>Ваше мнение о Codifun:</p>
+			<p><textarea name="comment" cols="50" rows="8"></textarea></p>
+		<br>
+		<p><input type="submit" value="Отправить"></p>
+	</form>
+	<script>
+		var canvas=document.getElementById('myCanvas');
+		var ctx=canvas.getContext('2d');
+		ctx.font="25px Arial";
+		ctx.fillText("Hello, World!",75,45);
+	</script>
+</body>
+</html>
