@@ -62,3 +62,14 @@
     background: #252525;
     border-color: transparent;
 }
+
+.home-slider .item-first{
+    background-image: url(../img/slider-image1.jpg);
+    background-position: center;
+}
+.home-slider .item-second{
+    background-image: url(../img/slider-image2.jpg);
+}
+.home-slider .item-third{
+    background-image: url(../img/slider-image3.jpg);
+}
