@@ -4,11 +4,11 @@
 <h1>Форма обратной связи</h1>
 <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">
 <input type="text" name="name" maxlength="15" placeholder="Ваше имя" pattern="[A-zА-я]{1,15}[- ]?[A-zА-я]{0,15}" title="Введите только буквы!" value="<?php echo $mess[1];?>" />
-<span class="err">*<?php if(!$mess[0]) echo "Заполните поле!";?></span><br/><br/>
+<span class="err">*<?php if(!$mess[0]) echo "Заполните поле!";?></span><br/>
 <input type="email" name="email" placeholder="Адрес вашей электронной почты" value="<?php echo $mess[3];?>" />
-<span class="err">*<?php if(!$mess[2]) echo "Заполните поле!";?></span><br/><br/>
-<textarea name="comment" placeholder="Ваше мнение"><?php echo $mess[5];?></textarea>
-<span class="err">*<?php if(!$mess[4]) echo "Заполните поле!";?></span><br/><br/>
+<span class="err">*<?php if(!$mess[2]) echo "Заполните поле!";?></span><br/>
+<textarea name="comment" placeholder="Ваше мнение" cols="25" rows="5"><?php echo $mess[5];?></textarea>
+<span class="err">*<?php if(!$mess[4]) echo "Заполните поле!";?></span><br/>
 <input type="submit" name="start" value="Отправить" />
 </form>
 <?php
