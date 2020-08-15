@@ -1,5 +1,5 @@
 <?php
-    function formGeneration($form){
+    function formGeneration($data){
 ?>
 <h1>Data for server</h1>
 <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post">
@@ -18,15 +18,15 @@ function filter($data){
   return $data;
 }
 function processingData(){
-    $name=$email="";
-    $err_name=$err_mail=$message="";
-    if($_SERVER["REQUEST_METHOD"]=="POST"){
-        if(!empty($_REQUEST['name'])){
-            if(!preg_match('/^[A-z]{1,10}[- ]?[A-z]{1,10}$/',$_REQUEST['name'])){
-                $err_name="Input correct name!";
-                }else{
-                $name=$_REQUEST['name'];
-            }
+$name=$email="";
+$err_name=$err_mail=$message="";
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    if(!empty($_REQUEST['name'])){
+        if(!preg_match('/^[A-z]{1,10}[- ]?[A-z]{1,10}$/',$_REQUEST['name'])){
+            $err_name="Input correct name!";
+            }else{
+            $name=$_REQUEST['name'];
+        }
         }else{
             $err_name="Input name!";
         }

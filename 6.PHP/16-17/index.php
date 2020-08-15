@@ -1,6 +1,6 @@
 <?php
     require 'processing_date.php';
-    $form = processingData();
+    $data = processingData();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +17,10 @@
 <body>
     <div class="container">
         <?php
-            formGeneration($form);
+            formGeneration($data);
             echo "<hr/>";
         ?>
     </div>
-   
+
 </body>
 </html>
