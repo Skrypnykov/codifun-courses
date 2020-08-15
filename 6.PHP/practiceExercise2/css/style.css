@@ -1,0 +1,8 @@
+*,
+*::before,
+*::after {
+	box-sizing:border-box;
+}
+input {
+	margin:10px 0;
+}
